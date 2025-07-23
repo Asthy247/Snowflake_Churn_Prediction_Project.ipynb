@@ -160,7 +160,8 @@ Key visualizations are generated using matplotlib and seaborn to interpret the d
 
 **Interpretation**: This plot illustrates the diagnostic ability of both models. An Area Under the Curve (AUC) of 1.00 for both Logistic Regression and Random Forest indicates perfect classification in this small, simulated dataset. In real-world scenarios, an AUC closer to 1.00 signifies a strong predictive model.
 
-<img width="938" height="636" alt="image" src="https://github.com/user-attachments/assets/e70fdeda-0bf4-4755-862e-78cd3222abfd" />
+<img width="891" height="691" alt="image" src="https://github.com/user-attachments/assets/4880f250-53e1-40e4-bdbd-87915d228b2c" />
+
 
 
 # Top 10 Feature Importance (Random Forest)
