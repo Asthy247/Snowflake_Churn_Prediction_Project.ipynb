@@ -171,6 +171,7 @@ Key visualizations are generated using matplotlib and seaborn to interpret the d
 
 # Distribution of Churn (True vs. False)
 
+
 **Interpretation:** This bar chart displays the class balance of the target variable (CHURN_LABEL), showing 6 customers who did not churn and 4 who did. 
 Understanding class distribution is crucial for selecting appropriate evaluation metrics and potential handling of class imbalance in larger datasets.
 
@@ -186,22 +187,24 @@ The machine learning component offers the capability to proactively identify at-
 
 The feature importance analysis provides clear, actionable insights into which customer attributes most influence churn, guiding product development and marketing efforts.
 
+
+
 # 4. Recommendations & Future Work
-Based on this foundational work, here are **key recommendations and areas for future development:**
+Based on this foundational work, here are key recommendations and areas for future development:
 
-Apply this pipeline to a more extensive and diverse dataset to build a more robust and generalizable model. This would also allow for more nuanced insights from the analytical queries and model evaluation.
-
-
-Explore more complex feature interactions (e.g., cross-features), time-series features (if historical data is available), or external data sources (e.g., customer service interactions, website usage data) to enrich the feature set.
+**Integrate with a Larger, Real-world Dataset:** Apply this pipeline to a more extensive and diverse dataset to build a more robust and generalizable model. This would also allow for more nuanced insights from the analytical queries and model evaluation.
 
 
-Experiment with deep learning models (e.g., LSTMs for sequential data) or advanced boosting algorithms (e.g., LightGBM, CatBoost) that might capture more complex patterns.
+**Advanced Feature Engineering:** Explore more complex feature interactions (e.g., cross-features), time-series features (if historical data is available), or external data sources (e.g., customer service interactions, website usage data) to enrich the feature set.
 
 
-Implement a strategy for deploying the trained model (e.g., as an API endpoint using Flask/FastAPI, or via Snowpark for in-Snowflake inference) and continuously monitoring its performance in production to detect data drift or concept drift. This is crucial for maintaining model effectiveness over time.
+**Explore More Sophisticated Models**: Experiment with deep learning models (e.g., LSTMs for sequential data) or advanced boosting algorithms (e.g., LightGBM, CatBoost) that might capture more complex patterns.
 
 
-If applicable, design and analyze A/B tests for churn prevention strategies, using the model's predictions to target specific customer segments for interventions.
+**Model Deployment & Monitoring:** Implement a strategy for deploying the trained model (e.g., as an API endpoint using Flask/FastAPI, or via Snowpark for in-Snowflake inference) and continuously monitoring its performance in production to detect data drift or concept drift. This is crucial for maintaining model effectiveness over time.
 
 
-Develop an automated pipeline for periodic model retraining to ensure the model remains up-to-date with changing customer behaviors and market conditions.
+**A/B Testing Integration:** If applicable, design and analyze A/B tests for churn prevention strategies, using the model's predictions to target specific customer segments for interventions.
+
+
+**Automated Retraining Pipeline**: Develop an automated pipeline for periodic model retraining to ensure the model remains up-to-date with changing customer behaviors and market conditions.
